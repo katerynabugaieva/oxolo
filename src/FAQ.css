@@ -1,0 +1,28 @@
+.layout {
+    min-height: calc(100vh - 175px);
+}
+
+.content {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+}
+
+.tutorial-span {
+    display: inline;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+}
