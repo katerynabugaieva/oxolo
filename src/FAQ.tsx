@@ -82,7 +82,7 @@ const FAQ: FC = () => {
                   <p className="block-titel">First impression</p>
                 </div>
                 <div className="divider" />
-                {data[0].map((impression) => {
+                {data[0].map((impression: any) => {
                   return (
                     <div className="list-item-container">
                       <h3>Role: {impression.role}</h3>
@@ -106,7 +106,7 @@ const FAQ: FC = () => {
                   <p className="block-titel">Improvements</p>
                 </div>
                 <div className="divider" />
-                {data[1].map((improvements) => {
+                {data[1].map((improvements: any) => {
                   return (
                     <div className="list-item-container">
                       <h3>Role: {improvements.role}</h3>
