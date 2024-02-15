@@ -12,10 +12,11 @@ const FAQ: FC = () => {
             <div className="titel-wrap">
               <div className="titel">
                 <h2 className=" titel-h2">
-                  <span>General Questions Assessment Details:</span>
+                  <span>General Questions Assessment Details</span>
                 </h2>
               </div>
               <div className="subtitel-container">
+                <div className="subtitel">Made by Kateryna Bugaieva.</div>
                 <div className="subtitel">
                   This is section about my attitude to a product as User or a
                   Dev.
