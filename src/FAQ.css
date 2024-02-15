@@ -12,8 +12,125 @@
     display: block;
 }
 
-.tutorial-span {
+.content-container {
+    margin-bottom: 128px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.title-container {
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px 0px 8px;
+}
+
+.titel-wrap {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 60px;
+    width: calc(100% + 16px);
+    margin-left: -16px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.titel {
+    padding-left: 16px;
+    padding-top: 16px;
+    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    max-width: none;
+    width: auto;
+}
+
+.titel-h2 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 86px;
+    margin-bottom: 14px;
+    padding-top: 60px;
+    text-align: center;
+    color: #332638;
     display: inline;
+}
+
+.subtitel-container {
+    padding-left: 16px;
+    padding-top: 16px;
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.subtitel {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.content-wrap {
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.section-list {
+    display: flex;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    flex-flow: wrap;
+    margin-top: -32px;
+    width: calc(100% + 32px);
+    margin-left: -32px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.item-box {
+    padding-left: 32px;
+    padding-top: 32px;
+    flex: 0 0 auto;
+    max-width: none;
+    width: auto;
+}
+
+.item-button {
+    box-shadow: none !important;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 50px;
+    background-color: #332638;
+    color: #fff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    width: 100%;
+    min-width: 220px;
+    padding: 0px;
+    border-radius: 32px !important;
 }
 
 .link {
@@ -25,4 +142,14 @@
     text-decoration: none;
     color: white;
     flex-grow: 1;
+}
+
+.link-button-text {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+    white-space: pre;
 }

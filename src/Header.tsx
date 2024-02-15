@@ -8,11 +8,11 @@ const Header: FC = () => {
         <>
             <header className="header">
                 <div className="header_app">
-                    <div className="MuiContainer-root container" >
-                        <div className="MuiGrid-root MuiGrid-container header_container">
-                            <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-auto logo_item">
+                    <div className="container" >
+                        <div className="header_container">
+                            <div className="logo_item">
                                 <a href="/" className="header_logoLink" title="Home">
-                                    <img src={logo} className="App-logo" alt="logo" />
+                                    <img src={logo} alt="logo" />
                                 </a>
                             </div>
 
