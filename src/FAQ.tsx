@@ -4,7 +4,6 @@ import data from "../src/data.json";
 import StarIcon from "@mui/icons-material/Star";
 
 const FAQ: FC = () => {
-  console.log(data[3]);
   return (
     <div>
       <div className="content">
@@ -74,15 +73,15 @@ const FAQ: FC = () => {
                   <p className="block-titel">First impression</p>
                 </div>
                 <div className="divider" />
-                {data[0].map((impression: any) => {
+                {data[0].map((impression: any, key: number) => {
                   return (
-                    <div className="list-item-container">
+                    <div className="list-item-container" key={key}>
                       <h3>Role: {impression.role}</h3>
                       <h6>Key-focus: {impression.point}</h6>
                       <p>{impression.comment}</p>
                       {impression.role === "user" &&
-                        [...Array(impression.rating)].map((e, i) => (
-                          <StarIcon />
+                        [...Array(impression.rating)].map((keyIcon) => (
+                          <StarIcon key={keyIcon} />
                         ))}
                     </div>
                   );
@@ -96,9 +95,9 @@ const FAQ: FC = () => {
                   <p className="block-titel">Improvements</p>
                 </div>
                 <div className="divider" />
-                {data[1].map((improvements: any) => {
+                {data[1].map((improvements: any, key: number) => {
                   return (
-                    <div className="list-item-container">
+                    <div className="list-item-container" key={key}>
                       <h3>Role: {improvements.role}</h3>
                       <h6
                         style={{
@@ -109,8 +108,8 @@ const FAQ: FC = () => {
                       </h6>
                       <p>{improvements.comment}</p>
                       what satisfaction will it bring to a user:{" "}
-                      {[...Array(improvements.rating)].map((e, i) => (
-                        <StarIcon />
+                      {[...Array(improvements.rating)].map((key) => (
+                        <StarIcon key={key} />
                       ))}
                     </div>
                   );
@@ -131,8 +130,8 @@ const FAQ: FC = () => {
                       <h6>Key-focus: {feature.point}</h6>
                       <p>{feature.comment}</p>
                       what satisfaction will it bring to a user:{" "}
-                      {[...Array(feature.rating)].map((e, i) => (
-                        <StarIcon />
+                      {[...Array(feature.rating)].map((key) => (
+                        <StarIcon key={key} />
                       ))}
                     </div>
                   );
@@ -165,6 +164,67 @@ const FAQ: FC = () => {
                           ))}
                       </ul>
                     </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            <section id="why_me">
+              <div className="block-container">
+                <div className="block-container-titel">
+                  <p className="block-titel">Why me?</p>
+                </div>
+                <div className="divider" />
+                {data[4].map((kate: any, key: number) => {
+                  return (
+                    <>
+                      <div
+                        className="list-item-container list-item-container-full "
+                        key={key}
+                      >
+                        <h3>Technical skills: </h3>
+                        {kate.technical_skills &&
+                          kate.technical_skills.map(
+                            (pros: any, key: number) => (
+                              <li key={key}>{pros}</li>
+                            )
+                          )}
+                      </div>
+                      <div
+                        className="list-item-container list-item-container-full "
+                        key={key}
+                      >
+                        <h3>Human skills: </h3>
+                        {kate.human_being &&
+                          kate.human_being.map((pros: any, key: number) => (
+                            <li key={key}>{pros}</li>
+                          ))}
+                      </div>
+                      <div
+                        className="list-item-container list-item-container-full "
+                        key={key}
+                      >
+                        <h3>What would I do if I had more time: </h3>
+                        <h4>
+                          I was asked to share something, I just want to show
+                          who I am
+                        </h4>
+                        {kate.next_steps &&
+                          kate.next_steps.map((pros: any, key: number) => (
+                            <li key={key}>{pros}</li>
+                          ))}
+                      </div>
+                      <div
+                        className="list-item-container list-item-container-full "
+                        key={key}
+                      >
+                        <h3>Mottos: </h3>
+                        {kate.mottos &&
+                          kate.mottos.map((pros: any, key: number) => (
+                            <li key={key}>{pros}</li>
+                          ))}
+                      </div>
+                    </>
                   );
                 })}
               </div>

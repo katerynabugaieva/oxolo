@@ -24,7 +24,6 @@
     "rating": 1
 }],
 
-
 [
     {
         "role": "user",
@@ -93,9 +92,8 @@
         "video": "marathon",
         "positive": ["Nice voice", "Smooth picture transition"],
         "negative":["Mismatch between pictures and text", "Some info is missing"]
-      
     },
-   
+
     {
         "video": "goods from amazon",
     "positive": [
@@ -114,6 +112,30 @@
         "No 'selling' for a Person - no skills, no focuses, only mentioning as a contact person."
     ]
     }
+],
+[
+    {
+        "technical_skills": ["React", "typescript", "HTML", "CSS", "any frontend stuff you need"],
+        "human_being": [
+            "stubborn",
+            "thinking out of the box",
+            "passionate",
+            "curious",
+            "open"
+        ],
+        "mottos": [
+            "I know how to do what I love and how to love what I do.",
+            "The balance between perfection and good enough.",
+            "I preferred to learn rather than earn, so I have spent the last 6 years working in every conceivable form, and now finally enjoy sharing my experiences rather than just getting them myself."
+        ],
+        "next_steps":[
+            "break it into modules and make microservices (e.g. header)",
+            "make a small server and read data from there",
+            "add more functional code",
+            "add localisation and global colours",
+            "implement video for examples "
+        ]
+    }   
 ]
 
 
