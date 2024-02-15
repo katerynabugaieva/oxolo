@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./FAQ.css";
-import data from "../src/impression.json";
+import data from "../src/data.json";
 import StarIcon from "@mui/icons-material/Star";
 
 const FAQ: FC = () => {
@@ -35,7 +35,7 @@ const FAQ: FC = () => {
               </div>
               <div className="item-box">
                 <button className="item-button" type="button">
-                  <a href="#Basic" className="link">
+                  <a href="#improvements" className="link">
                     Improvements
                   </a>
                   <span className="MuiTouchRipple-root link-button-text"></span>
@@ -82,7 +82,7 @@ const FAQ: FC = () => {
                   <p className="block-titel">First impression</p>
                 </div>
                 <div className="divider" />
-                {data.map((impression) => {
+                {data[0].map((impression) => {
                   return (
                     <div className="list-item-container">
                       <h3>Role: {impression.role}</h3>
@@ -90,10 +90,38 @@ const FAQ: FC = () => {
                       <p className="TutorialCard_description__VQssO">
                         {impression.comment}
                       </p>
-                      {impression.role == "user" &&
+                      {impression.role === "user" &&
                         [...Array(impression.rating)].map((e, i) => (
                           <StarIcon />
                         ))}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            <section id="improvements">
+              <div className="block-container">
+                <div className="block-container-titel">
+                  <p className="block-titel">Improvements</p>
+                </div>
+                <div className="divider" />
+                {data[1].map((improvements) => {
+                  return (
+                    <div className="list-item-container">
+                      <h3>Role: {improvements.role}</h3>
+                      <h6
+                        style={{
+                          color: improvements.type === "bug" ? "red" : "#000",
+                        }}
+                      >
+                        Key-focus: {improvements.focus}
+                      </h6>
+                      <p>{improvements.comment}</p>
+                      what satisfaction will it bring to user:{" "}
+                      {[...Array(improvements.rating)].map((e, i) => (
+                        <StarIcon />
+                      ))}
                     </div>
                   );
                 })}

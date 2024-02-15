@@ -1,0 +1,69 @@
+[
+    [
+    {
+    "role":"dev",
+    "point":"usability",
+    "comment":"As a developer, I see huge potential in the future: with enough abstraction, OXOLO could be used to generate video tutorials to replace the STORYBOOKS of any company creating content blocks on video. "
+},
+{
+    "role": "user",
+    "point": "daily usage",
+    "comment": "As a product marketer, I would use OHOLO every day: short videos on instragram, rils, any social network. You can reduce advertising costs by generating daily visibility of the product in the market. ",
+    "rating":5
+},
+{
+    "role": "user",
+    "point": "Content",
+    "comment": "As a Marathon participant, I can confirm that OXOLO exceeded all my expectations in generating videos just from the start page of the event (https://www.marathon-hannover.de/strecken/streckenverlauf.html): all important aspects are taken into account, sponsors, distances. This video really SELLS. As a member of the Achilles group (running with the invisible) I see great potential in OXOLO to attract sponsors and participants for races around the world",
+    "rating": 5
+},
+{
+    "role": "user",
+    "point": "Content",
+    "comment": "As a job seeker, I used OXOLO to generate a video on my LinkedIn profile. I would not recommend this product for this purpose: the generated video told more about my current job than about me as a job seeker",
+    "rating": 1
+}],
+
+
+[{
+        "role": "user",
+        "type": "comment",
+        "focus": "Visual",
+        "comment": "I'd like consistency. Even though the site is not a product, a few things catch my eye. For example, I didn't align the buttons in the header. Isn't that noticeable? Some text is not capitalised, many buttons are not centred (used padding instead of align - eg. User profile)",
+        "rating": 3
+    },
+    {
+        "role": "user",
+        "type": "comment",
+        "focus": "User Experience",
+        "comment": "Different parts of the site have different user interfaces and it's a bit distracting (in the studio, https://studio.oxolo.com/studio-home the drop-down menu looks different than the video creation https://www.oxolo.com/solutions/video-creator/). From the user's point of view it's one product and the interface should be similar ",
+        "rating": 3
+    },
+    {
+        "role": "dev",
+        "type":"bug",
+        "focus": "CRITICAL BUG, PLEASE FIX EVEN IF YOU DON'T HIRE ME!!!",
+        "comment": "If the video creation fails, the user sees information that credits will be returned to them, but this doesn't happen until a hot refresh of the page. How to reproduce: create a broken video. Credits are deducted and not refunded. Refresh the page.",
+        "rating": 5
+    }
+
+
+],
+
+[
+    {
+        "role": "user",
+        "point": "New Feature",
+        "comment": "User profile. Avatars, some information, preferences - could be used for default suggestions for languages, actors",
+        "rating": 5
+    },
+    {
+        "role": "user",
+        "point": "User Experience",
+        "comment": "Different parts of the site have different user interfaces and it's a bit distracting (in the studio, https://studio.oxolo.com/studio-home the drop-down menu looks different than the video creation https://www.oxolo.com/solutions/video-creator/). From the user's point of view it's one product and the interface should be similar ",
+        "rating": 3
+    }
+]
+
+
+]
