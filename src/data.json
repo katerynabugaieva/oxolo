@@ -47,6 +47,13 @@
         "rating": 5
     },
     {
+        "role": "dev",
+        "type": "bug",
+        "focus": "Not critical but would be nice to fix",
+        "comment": "When video is created, it's overlap content and drop-down menu is not reachable",
+        "rating": 3
+    },
+    {
         "role": "user",
         "type": "comment",
         "focus": "User Experience",
@@ -129,7 +136,7 @@
             "I preferred to learn rather than earn, so I have spent the last 6 years working in every conceivable form, and now finally enjoy sharing my experiences rather than just getting them myself."
         ],
         "next_steps":[
-            "break it into modules and make microservices (e.g. header)",
+            "break it into modules and make microservices",
             "make a small server and read data from there",
             "add more functional code",
             "add localisation and global colours",
