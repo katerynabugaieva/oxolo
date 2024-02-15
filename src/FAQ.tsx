@@ -4,6 +4,7 @@ import data from "../src/data.json";
 import StarIcon from "@mui/icons-material/Star";
 
 const FAQ: FC = () => {
+  console.log(data[3]);
   return (
     <div>
       <div className="content">
@@ -148,13 +149,21 @@ const FAQ: FC = () => {
                 {data[3].map((diff: any) => {
                   return (
                     <div className="list-item-container">
-                      <h3>Role: {diff.role}</h3>
-                      <h6>Key-focus: {diff.point}</h6>
-                      <p>{diff.comment}</p>
-                      what satisfaction will it bring to a user:{" "}
-                      {[...Array(diff.rating)].map((e, i) => (
-                        <StarIcon />
-                      ))}
+                      <h3>Video type: {diff.video}</h3>
+                      <ul>
+                        What is good:
+                        {diff.positive &&
+                          diff.positive.map((pros: any, key: number) => (
+                            <li key={key}>{pros}</li>
+                          ))}
+                      </ul>
+                      <ul>
+                        What will be solved by a human:
+                        {diff.negative &&
+                          diff.negative.map((pros: any, key: number) => (
+                            <li key={key}>{pros}</li>
+                          ))}
+                      </ul>
                     </div>
                   );
                 })}

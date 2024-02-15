@@ -90,17 +90,29 @@
 ],
 [
     {
-        "role": "user",
-        "point": "New Feature",
-        "comment": "User profile. Avatars, some information, preferences - could be used for default suggestions for languages, actors.",
-        "rating": 5
+        "video": "marathon",
+        "positive": ["Nice voice", "Smooth picture transition"],
+        "negative":["Mismatch between pictures and text", "Some info is missing"]
+      
     },
    
     {
-        "role": "dev",
-        "point": "Dev experience",
-        "comment": "Endpoints in the tutorial are not copied by a click. Dev-user has to copy them directly. Small change, big satisfaction.",
-        "rating": 3
+        "video": "goods from amazon",
+    "positive": [
+        "Really good highlights for the product",
+        "Even when there are multiple items in a purchase, attention is paid to each one."
+    ],
+    "negative": [
+        "At the end of the video, a small pause is needed after the actor stops talking. "
+    ]
+    },
+    {
+        "video": "linkedin profile",
+    "positive": [ ],
+    "negative": [
+        "Focus on the company, not the person",
+        "No 'selling' for a Person - no skills, no focuses, only mentioning as a contact person."
+    ]
     }
 ]
 
