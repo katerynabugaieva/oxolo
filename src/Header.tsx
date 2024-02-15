@@ -1,6 +1,7 @@
 import React, { FC } from "react"
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import logo from './logo.svg';
+
 import "./Header.css"
 
 const Header: FC = () => {
