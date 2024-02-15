@@ -27,7 +27,7 @@ const FAQ: FC = () => {
             <div className="section-list">
               <div className="item-box">
                 <button className="item-button" type="button">
-                  <a href="#first_impression" className="link">
+                  <a href="#impression" className="link">
                     First impression
                   </a>
                   <span className="link-button-text"></span>
@@ -38,45 +38,36 @@ const FAQ: FC = () => {
                   <a href="#improvements" className="link">
                     Improvements
                   </a>
-                  <span className="MuiTouchRipple-root link-button-text"></span>
+                  <span className="link-button-text"></span>
                 </button>
               </div>
               <div className="item-box">
-                <button
-                  className=" tutorials_headerBtn__sGsgN Button_button__wouyg undefined css-186rtne item-button"
-                  type="button"
-                >
-                  <a href="#Basic" className="link">
+                <button className="item-button" type="button">
+                  <a href="#feature" className="link">
                     New feature
                   </a>
-                  <span className="MuiTouchRipple-root link-button-text"></span>
+                  <span className="link-button-text"></span>
                 </button>
               </div>
               <div className="item-box">
-                <button
-                  className=" tutorials_headerBtn__sGsgN Button_button__wouyg undefined css-186rtne item-button"
-                  type="button"
-                >
-                  <a href="#Basic" className="link">
+                <button className="item-button" type="button">
+                  <a href="#manual" className="link">
                     Diff with manual
                   </a>
                   <span className="MuiTouchRipple-root link-button-text"></span>
                 </button>
               </div>
               <div className="item-box">
-                <button
-                  className=" tutorials_headerBtn__sGsgN Button_button__wouyg undefined css-186rtne item-button"
-                  type="button"
-                >
-                  <a href="#Basic" className="link">
+                <button className="item-button" type="button">
+                  <a href="#why_me" className="link">
                     Why me
                   </a>
-                  <span className="MuiTouchRipple-root link-button-text"></span>
+                  <span className="link-button-text"></span>
                 </button>
               </div>
             </div>
 
-            <section id="first_impression">
+            <section id="impression">
               <div className="block-container">
                 <div className="block-container-titel">
                   <p className="block-titel">First impression</p>
@@ -87,9 +78,7 @@ const FAQ: FC = () => {
                     <div className="list-item-container">
                       <h3>Role: {impression.role}</h3>
                       <h6>Key-focus: {impression.point}</h6>
-                      <p className="TutorialCard_description__VQssO">
-                        {impression.comment}
-                      </p>
+                      <p>{impression.comment}</p>
                       {impression.role === "user" &&
                         [...Array(impression.rating)].map((e, i) => (
                           <StarIcon />
@@ -118,8 +107,52 @@ const FAQ: FC = () => {
                         Key-focus: {improvements.focus}
                       </h6>
                       <p>{improvements.comment}</p>
-                      what satisfaction will it bring to user:{" "}
+                      what satisfaction will it bring to a user:{" "}
                       {[...Array(improvements.rating)].map((e, i) => (
+                        <StarIcon />
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            <section id="feature">
+              <div className="block-container">
+                <div className="block-container-titel">
+                  <p className="block-titel">Features</p>
+                </div>
+                <div className="divider" />
+                {data[2].map((feature: any) => {
+                  return (
+                    <div className="list-item-container">
+                      <h3>Role: {feature.role}</h3>
+                      <h6>Key-focus: {feature.point}</h6>
+                      <p>{feature.comment}</p>
+                      what satisfaction will it bring to a user:{" "}
+                      {[...Array(feature.rating)].map((e, i) => (
+                        <StarIcon />
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            <section id="manual">
+              <div className="block-container">
+                <div className="block-container-titel">
+                  <p className="block-titel">Difference with a manual video</p>
+                </div>
+                <div className="divider" />
+                {data[3].map((diff: any) => {
+                  return (
+                    <div className="list-item-container">
+                      <h3>Role: {diff.role}</h3>
+                      <h6>Key-focus: {diff.point}</h6>
+                      <p>{diff.comment}</p>
+                      what satisfaction will it bring to a user:{" "}
+                      {[...Array(diff.rating)].map((e, i) => (
                         <StarIcon />
                       ))}
                     </div>
